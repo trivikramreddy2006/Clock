@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(270deg, #ff0080, #7928ca, #2af598, #ff8c00);
+    background-size: 800% 800%;
+    animation: floatColors 20s ease infinite;
+}
+@keyframes floatColors {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+#laps{
+    max-height: 200px;
+    overflow-y:auto ;
+}
+
+#colorzone {
+    transition: background-color 0.3s ease;
+}
